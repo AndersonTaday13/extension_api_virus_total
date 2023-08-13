@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Url segura",
+  "version": "1.0",
+  "description": "Extension para ver si una url es segura",
+  "icons": {
+    "128": "icono.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["tabs", "contextMenus"],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["popup.js"]
+    }
+  ],
+  "options_ui": {
+    "page": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["popup.html", "popup.js", "popup.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

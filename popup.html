@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="axios.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+    <div class="popup">
+        <h1>Buscar URL</h1>
+            <label for="urlInput">Ingrese la URL:</label>
+            <input type="text" id="urlInput" name="urlInput" placeholder="https://www.ejemplo.com" required>
+            <button  id="checkButton" type="submit">Buscar</button>
+        <div class="result-area">
+            <h2>Resultado:</h2>
+            <p id="result"></p>
+        </div>
+    </div>
+    <footer>
+        <p>Universidad Nacional de Loja</p>
+        <p>Anderson Manuel Taday Sacnhez</p>
+        <p>anderson.taday@unl.edu.ec</p>
+    </footer>
+    <script src="popup.js"></script>
+</body>
+</html>
